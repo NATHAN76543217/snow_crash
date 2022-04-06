@@ -33,4 +33,9 @@ First we need to extract this file using `scp`.
 
 Then I open the file with Wireshark, select the first packet and `Follow the TCP stream`.
 Now I can see the password in plain text: `Password: ft_wandr...NDRel.L0L`.
-Then I need to interpret the DEL characters and the remaining password is: `ft_waNDReL0L`.
+Then I need to interpret the DEL characters and get the remaining password.
+
+Password is: `ft_waNDReL0L`.
+Flag is: `kooda2puivaav1idi4f57q8iq`.
+
+## level03
