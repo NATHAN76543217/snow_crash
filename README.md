@@ -30,3 +30,7 @@ Flag is: `f2av5il02puano7naaf6adaaf`.
 There is a `level02.pcap` file. a `.pcap` file can be opened with `wireshark` and represent a capture of some network transmissions.     
 First we need to extract this file using `scp`.
 `scp -q -P 2222 level02@10.64.1.226:./level02.pcap ./level02/`
+
+Then I open the file with Wireshark, select the first packet and `Follow the TCP stream`.
+Now I can see the password in plain text: `Password: ft_wandr...NDRel.L0L`.
+Then I need to interpret the DEL characters and the remaining password is: `ft_waNDReL0L`.
