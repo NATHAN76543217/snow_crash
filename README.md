@@ -18,5 +18,8 @@ find interesting files: `find / -user flag01`.
 Nothing founded, let's check in `/etc/passwd`.
 Found:
 `flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash`.
+Put this onto a user.txt file and give it to `John`.
+John output:
+`flag01:abcdefg:3001:3001::/home/flag/flag01:/bin/bash`.    
 
-Password is: `42hDRfypTqqnw`.
+Password is: `abcdefg`.
