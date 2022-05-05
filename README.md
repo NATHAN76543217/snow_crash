@@ -115,3 +115,33 @@ Payload: export LOGNAME="level07 && getflag"
 Flag is: `fiumuikeil55xe9cu4dood66h`.
 
 ## level08
+
+There is 2 files:
+- `level08` a SUID to exploit
+- `token` an unreadable little file
+
+`level08` dump the content of a file passed in parameter except if it's called `token`.    
+ First I gived myself the write permissions on the local directory with: `chmod +w .`.   
+ Then I create a symbolic link on token with: `ln -s token ./dodo` and give it to `level08`.    
+ That gived me: `quif5eloekouj29ke0vouxean`.    
+
+ Then `su flag08` and `getflag`:    
+ Flag is: `25749xKZ8L7DkSCwJkT9dyv6f`
+
+## level09
+
+There is 2 files (again):
+- `level09` a SUID to exploit
+- `token` an little readable file
+
+`token` content:
+0000000: 6634 6b6d 6d36 707c 3d82 7f70 826e 8382  f4kmm6p|=..p.n..
+0000010: 4442 8344 757b 7f8c 890a                 DB.Du{....
+
+Gived to `./level09`:
+0000000: 6635 6d70 713b 7683 458b 897b 8e7b 9191  f5mpq;v.E..{.{..
+0000010: 5453 9557 8990 95a3 a10a                 TS.W......
+
+Gived to `./level09` a second time:
+0000000: 6636 6f73 7540 7c8a 4d94 9386 9a88 9fa0  f6osu@|.M.......
+0000010: 6464 a76a 9da5 abba b90a                 dd.j......
