@@ -1,6 +1,0 @@
-hello [x eval(\'/bin/ls')]
-
-coucou
-[x @('test'); system('/bin/ls');)]
-
-[x return @("..@") . id) \. system("/bin/ls");]

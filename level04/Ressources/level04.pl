@@ -5,7 +5,5 @@ print "Content-type: text/html\n\n";
 sub x {
   $y = $_[0];
   print `echo $y 2>&1`;
-  print `echo lol && pwd 2>&1`;
 }
 x(param("x"));
-
